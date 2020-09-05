@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>teste carbel</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="sortcut icon" href="img/honda-ico.png" type="image/x-icon" />;
+
+    <style>
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+   cursor: pointer;
+   display: block;
+   height: 10px;
+   position: absolute;
+  width: 10px;
+   z-index: 10;
+ }
+
+ .slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+     left: 40px;
+ }
+
+ .slider li:nth-child(3) label {
+    left: 70px;
+ }
+
+ .slider img {
+  opacity: 0;
+     visibility: hidden;
+ }
+
+.slider li input:checked ~ img {
+     opacity: 1;
+     visibility: visible;
+    z-index: 10;
+ }
+ .slide{
+   margin:200px auto;
+   width: 800px;
+   height: 600px;
+   position: static;
+   overflow: hidden;
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .foto{
+   position: absolute;
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+   opacity: 0;
+   animation-name: anima;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+ }
+ .foto:nth-child(1)
+ {
+
+ }
+.foto:nth-child(2)
+ {
+   animation-delay: 5s;
+ }
+ .foto:nth-child(3)
+ {
+   animation-delay: 10s;
+ }
+ .foto:nth-child(4)
+ {
+   animation-delay: 15s;
+ }
+
+ @keyframes anima{
+   25%{
+     opacity: 1;
+     transform : scale(1.1,1.1);
+   }
+   50%{
+     opacity: 0;
+   }
+ }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">INFO GERAL</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#about">Seção 1</a>
+                    </li>
+                    <li>
+                        <a href="#services">Seção 2</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Seção 3</a>
+                    </li>
+                    <li>
+                      <a href="#call">Agende um test drive</a>
+                  </li>
+                     <li>
+                        <a href="Weverton Almeida Vailante - 2020.docx">Currículo ↓</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="title-container">
+
+                    <p style="font-size:400%;">Honda Civic</p>
+                                    <div class="inner" style="font-size:200%;">10° Geração</div>
+            <div class="headline">
+
+
+            </div>
+
+            <!--<div class="description">
+                <div class="inner">Exemplao descrição</div>
+            </div>-->
+        </div>
+        <div class="filter"></div>
+        <img  src="img/civic.jpg" class="fundo" alt="">
+
+        <!-- não funcionou :/
+        <div class="poster hidden">
+            <img src="http://www.videojs.com/img/poster.jpg" alt="">
+        </div>
+        -->
+    </div>
+</div>
+
+
+
+    <!-- Conteúdo da Página -->
+    <div class="container">
+
+        <hr class="featurette-divider">
+        <div class="featurette" id="about">
+            <img class="featurette-image img-circle img-responsive pull-right" src="img/civic-1.jpg">
+            <h2 class="featurette-heading">A emoção de dirigir,
+                <h3><span class="text-muted"> O novo Civic Geração 10 traz um design único mudando a categoria de sedãs para sempre. Ele garante a melhor dirigibilidade com o máximo em sofisticação e conforto, atribuído por seu design interno e diferenciada ergonomia..</span></h3>
+            </h2>
+
+
+            <div class="container">
+
+   <p style="line-height: 70px; text-align: center;"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sobre</button>
+
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sobre</h4>
+        </div>
+        <div class="modal-body">
+          <h2 class="text-center">Saiba mais:</h2>
+		  <p><h3 class="text-center">Informações adicionais</h3></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+        </div>
+        <hr class="featurette-divider">
+
+
+        <div class="featurette" id="services">
+            <img class="featurette-image img-rounded img-responsive pull-left" src="img/civic-2.jpg">
+            <h2 class="featurette-heading">Prepare-se,
+                <span class="text-muted">O Novo Civic Geração 10 vem completo de série. Conheça a versão perfeita para você.</span>
+            </h2>
+
+            <div class="container">
+
+   <p style="line-height: 70px; text-align: center;"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalD">Sobre</button>
+
+
+  <div class="modal fade" id="myModalD" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+
+          <h2 class="text-center"></h2>
+		  <div class="table-responsive">
+
+			<h2>Itens</h2>
+			<p>*sujeito a alterações</p>
+			  <table class="table">
+				<thead>
+				 <tr class='row'>
+					<th>Categorias</th>
+					<th>Descrição</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr class="row">
+						<td> Categoria </td>
+						<td>
+						<ul>
+						<li>item 1</li>
+						<li>item 2</li>
+						<li>item 3</li>
+						</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="featurette" id="contact">
+            <img class="featurette-image img-circle img-responsive pull-right" src="img/civic-3.jpg">
+            <h6 class="featurette-heading">Direção:
+                <span class="text-muted">Assistida</span>
+            </h6>
+			 <h6 class="featurette-heading">Vidros:
+                <span class="text-muted">Elétricos com subida</span>
+            </h6>
+			 <h6 class="featurette-heading">Câmbio:
+                <span class="text-muted">SVT com Padlle Shit</span>
+            </h6>
+
+        </div>
+        <hr class="featurette-divider">
+
+        <table>
+          <td>
+            <section class="slide">
+            <tr>
+
+          <h2 class="featurette-heading">Mais Imagens :
+        </h2>
+        <br>
+      </tr>
+      <tr>
+
+            <img class ="foto" class="featurette-image img-circle img-responsive pull-right" src="img/slider-1.jpg">
+            <img class ="foto" class="featurette-image img-circle img-responsive pull-right" src="img/slider-2.jpg">
+            <img class ="foto" class="featurette-image img-circle img-responsive pull-right" src="img/slider-3.jpg">
+            <img class ="foto" class="featurette-image img-circle img-responsive pull-right" src="img/slider-4.jpg">
+          </section>
+        </tr>
+
+    </td>
+    </table>
+
+
+        <!-- Rodapé -->
+        <footer>
+            <div class="row" id="call">
+                <div class="col-lg-12">
+                    <div class="container-fluid bg-grey">
+  <h2 class="text-center">CONTATO</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p><span class="glyphicon glyphicon-map-marker"></span> Contagem, MG</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +55 (31) 994848994</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> weverton_apc21@hotmail.com</p><br>
+            <p class="img-responsive"><img src="img/logos.png" width="130" height="100"></p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="phone" name="phone" placeholder="Telefone" type="number" required>
+        </div>
+        <div class="col-sm-12 form-group">
+          <input class="form-control" id="email" name="e-mail" placeholder="E-mail" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="cometarios" placeholder="cometarios" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        /** Document Ready Functions **/
+/********************************************************************/
+
+$( document ).ready(function() {
+
+    // Resive video
+    scaleVideoContainer();
+
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video');
+
+    $(window).on('resize', function() {
+        scaleVideoContainer();
+        scaleBannerVideoSize('.video-container .poster img');
+        scaleBannerVideoSize('.video-container .filter');
+        scaleBannerVideoSize('.video-container video');
+    });
+
+});
+
+/** Reusable Functions **/
+/********************************************************************/
+
+function scaleVideoContainer() {
+
+    var height = $(window).height();
+    var unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height',unitHeight);
+
+}
+
+function initBannerVideoSize(element){
+
+    $(element).each(function(){
+        $(this).data('height', $(this).height());
+        $(this).data('width', $(this).width());
+    });
+
+    scaleBannerVideoSize(element);
+
+}
+
+function scaleBannerVideoSize(element){
+
+    var windowWidth = $(window).width(),
+        windowHeight = $(window).height(),
+        videoWidth,
+        videoHeight;
+
+    console.log(windowHeight);
+
+    $(element).each(function(){
+        var videoAspectRatio = $(this).data('height')/$(this).data('width'),
+            windowAspectRatio = windowHeight/windowWidth;
+
+        if (videoAspectRatio > windowAspectRatio) {
+            videoWidth = windowWidth;
+            videoHeight = videoWidth * videoAspectRatio;
+            $(this).css({'top' : -(videoHeight - windowHeight) / 2 + 'px', 'margin-left' : 0});
+        } else {
+            videoHeight = windowHeight;
+            videoWidth = videoHeight / videoAspectRatio;
+            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+        }
+
+        $(this).width(videoWidth).height(videoHeight);
+
+        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+
+    });
+}
+    </script>
+
+</body>
+</html>
